@@ -29,10 +29,14 @@
     </div>
 
      <!--SEARCH-->
-    <div id="search-block" class="bg-1 border-bottom" style="height: 0px">
+    <div id="search-block" class="bg-1 border-bottom">
         <div class="container search-input">
-            <label id="search-input-label" for="search-input">Search</label>
-            <input type="text" id="search-input" placeholder="Search"> 
+            <div class="pos-rel">
+                <label id="search-input-label" for="search-input">Search</label>
+                <input type="text" id="search-input" placeholder="Search">
+                <i id="search-icon-submit" class="fas fa-search"></i>
+                <i id="cancel-search" class="fas fa-times"></i> 
+            </div>
         </div>
     </div>
 
@@ -41,7 +45,7 @@
         <div  class="nav-logo container">
             <a href="index.html"><img src="images/logo.jpg" class="logo" alt="airline"></a>   
             <div>
-                 <i id="search-icon" class="fas fa-search"></i>
+                 <i id="search-icon-show-hide" class="fas fa-search"></i>
                 <span id="language-link">English</span>
                 <button class="btn-login"><span>Log in</span></button>
             </div>
