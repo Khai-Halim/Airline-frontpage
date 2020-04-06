@@ -133,14 +133,19 @@
 }
 
                  /**** SECONDARY NAVIGATION ****/
+
+/** TOP LVL MENU **/
 #nav-secondary{ 
-ul{
+>ul{
     display: flex;
     list-style: none;  
     justify-content: center;  
-    li{
+    >li{
         display: inline-block;
-        a{
+        &:hover ul.nav-secondary-sub-menu-1{
+            display: block;
+        }
+        >a{
             @include font-3;
             text-decoration: none;
             &:hover{
@@ -148,10 +153,54 @@ ul{
                 color: $primary-color-4;
             }
         }
-        span{
+        >span{
             @include font-3;
             cursor: pointer
+        }
+
+        /** SUB MENU LVL 1**/
+        ul.nav-secondary-sub-menu-1{
+            display: none;
+            >li{
+                display: inline-block;
+                padding: 5px 20px;
+                list-style: none;
+                width: 25%;
+                >a{
+                    display: block;
+                    color: $black;
+                    text-decoration: none;
+                    padding: 10px;
+                }
+
+                /** SUB MENU LVL 2**/
+                ul.nav-secondary-sub-menu-2{
+                    >li{
+                        display: block;
+                        list-style: none;
+                
+                        >a{
+                            @include font-5;
+                            text-decoration: none;
+                            &:hover{
+                                color: $primary-color-4;
+                            }
+                        }
+                        >span{
+                            @include font-4;
+                            border-bottom: solid $grey-1 1px;
+                            cursor: pointer;
+                            &:hover{
+                                color: $primary-color-4;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 }
+
+
+

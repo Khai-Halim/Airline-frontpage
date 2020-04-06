@@ -31,3 +31,19 @@ $font-4: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 25px 15px;
     text-transform: uppercase;
 }
+
+@mixin font-4{
+    display: block;
+    font-family: $font-4;
+    color: $black;
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+@mixin font-5{
+    display: block;
+    font-family: $font-4;
+    color: $black;
+    font-size: 1rem;
+    padding: 5px 0;
+}
