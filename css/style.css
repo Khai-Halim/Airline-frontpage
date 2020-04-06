@@ -32,6 +32,10 @@
   position: absolute;
 }
 
+.pos-fix {
+  position: fixed;
+}
+
 .fa-chevron-down {
   font-size: 0.6rem;
   padding-left: 5px;
@@ -278,6 +282,7 @@ body {
 
 #nav-secondary > ul > li ul.nav-secondary-sub-menu-1 {
   display: none;
+  left: 0;
 }
 
 #nav-secondary > ul > li ul.nav-secondary-sub-menu-1 > li {
