@@ -5,26 +5,32 @@ $grey-1: #ddd;
 $grey-2: #bbb;
 $grey-3: #999;
 $grey-4: #666;
-$input-focus: rgb(172, 255, 248);
 $primary-color-1: rgb(255, 209, 209);
 $primary-color-2: rgb(255, 152, 152);
 $primary-color-3: #ff5959;
 $primary-color-4: rgb(216, 38, 38);
-$other-color: rgb(255, 233, 200);
+$primary-color-5: rgb(170, 0, 0);
 $secondary-color-1: rgb(233, 249, 255);
 $secondary-color-2: rgb(174, 231, 255);
 $secondary-color-3: rgb(106, 210, 255);
 $secondary-color-4: rgb(48, 192, 253);
 $secondary-color-5: rgb(2, 142, 202);
+$other-color: rgb(255, 233, 200);
+$input-focus: rgb(172, 255, 248);
 
-.bg-other{
-    background: $other-color;
-}
-
+//background colors
 .bg-1{
     background: $secondary-color-1;
 }
 
 .bg-2{
     background: $white;
+}
+
+.bg-3{
+    background: $black;
+}
+
+.bg-other{
+    background: $other-color;
 }
