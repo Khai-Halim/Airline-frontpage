@@ -9,40 +9,75 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background: rgba($color: $black, $alpha: 0.3);
+        background: $darken;
     }
 }
 
-#tab-block{
-    border: solid;
-    background: $white;
+                            /** INFO BOX **/
+
+
+.info-box{
+    padding-top: 20px;
+    background: $primary-color-4;
+    
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 200px;
+    border-left-width: 20px;
+    h2{
+        color: $white;
+    }
+    p{
+        @include font-1;
+        color: $white;
+    }
+    a{
+        display: inline-block;
+        @include font-1;
+        color: $white;
+        text-decoration: none;
+        border: solid 2px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;  
+        margin: 15px;
+    }
 }
 
-nav#tab-menu{
-    z-index: 2;
-    ul{
-        background: blue;
+                            /** TABS MENU**/
+#tab-block{
+    padding-top: 40px;
+}
+
+ul#tab-btns{
+        z-index: 2;
+        background: rgba($color: $black, $alpha: 0.5);
         display: flex;
         justify-content: space-evenly;
         li{
             display: inline-block;
             list-style: none;
-            padding: 10px 20px;
+            padding: 15px;
             cursor: pointer;
             flex: 1;
             text-align: center;
+            color: $white;
             &:hover{
-                background: red;
+                background: $black;
             }
         }
-    }
 }
 
 .tab-content{
     display: none;
     padding: 20px;
+    background: $black;
+    color: $white;
 }
 
-.active-tab{
+.tab-btn-active{
+    background: $black;
+}
+
+.tab-content-active{
     display: block;
 }

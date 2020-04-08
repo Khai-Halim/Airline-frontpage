@@ -17,6 +17,7 @@ $secondary-color-4: rgb(48, 192, 253);
 $secondary-color-5: rgb(2, 142, 202);
 $other-color: rgb(255, 233, 200);
 $input-focus: rgb(172, 255, 248);
+$darken: rgba($color: $black, $alpha: 0.3);
 
 //background colors
 .bg-1{
@@ -34,3 +35,8 @@ $input-focus: rgb(172, 255, 248);
 .bg-other{
     background: $other-color;
 }
+
+.bg-darken{
+    background: $darken;
+}
+
