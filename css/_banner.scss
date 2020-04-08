@@ -1,8 +1,11 @@
                             /**BANNER & TABS SECTION**/
 #banner{
     position: relative;
-    height: 70vw;
+
     background: url('../images/banner.jpg')center/cover no-repeat;
+
+
+
     &::after{
         content: "";
         display: block;
@@ -14,15 +17,11 @@
 }
 
                             /** INFO BOX **/
-
-
 .info-box{
+    max-width: 600px;
     padding-top: 20px;
     background: $primary-color-4;
-    
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 200px;
-    border-left-width: 20px;
+    border-radius: 90% 70% 77% 0 / 0 0 90% 40%;
     h2{
         color: $white;
     }
@@ -54,6 +53,7 @@ ul#tab-btns{
         display: flex;
         justify-content: space-evenly;
         li{
+            @include font-1;
             display: inline-block;
             list-style: none;
             padding: 15px;
@@ -71,7 +71,10 @@ ul#tab-btns{
     display: none;
     padding: 20px;
     background: $black;
-    color: $white;
+    p{
+        color: $white;
+    }
+    
 }
 
 .tab-btn-active{
@@ -80,4 +83,13 @@ ul#tab-btns{
 
 .tab-content-active{
     display: block;
+}
+
+                            /**EXCLAIMER**/
+.exclaimer{
+    p{
+        color: $white;
+        font-size: 1rem;
+    }
+    
 }

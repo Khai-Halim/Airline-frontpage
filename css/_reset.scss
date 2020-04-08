@@ -14,3 +14,7 @@ h2{
     font-size: 2rem;
     padding: 0 15px;
 }
+
+p{
+    @include font-1;
+}
