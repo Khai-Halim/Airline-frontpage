@@ -1,0 +1,48 @@
+                            /**BANNER & TABS SECTION**/
+#banner{
+    position: relative;
+    height: 70vw;
+    background: url('../images/banner.jpg')center/cover no-repeat;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba($color: $black, $alpha: 0.3);
+    }
+}
+
+#tab-block{
+    border: solid;
+    background: $white;
+}
+
+nav#tab-menu{
+    z-index: 2;
+    ul{
+        background: blue;
+        display: flex;
+        justify-content: space-evenly;
+        li{
+            display: inline-block;
+            list-style: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            &:hover{
+                background: red;
+            }
+        }
+    }
+}
+
+.tab-content{
+    display: none;
+    padding: 20px;
+}
+
+.active-tab{
+    display: block;
+}
