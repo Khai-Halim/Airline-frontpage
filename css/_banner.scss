@@ -4,8 +4,6 @@
 
     background: url('../images/banner.jpg')center/cover no-repeat;
 
-
-
     &::after{
         content: "";
         display: block;
@@ -27,6 +25,7 @@
     }
     p{
         @include font-1;
+        padding: 15px;
         color: $white;
     }
     a{
@@ -90,6 +89,7 @@ ul#tab-btns{
     p{
         color: $white;
         font-size: 1rem;
+        padding: 15px;
     }
     
 }
