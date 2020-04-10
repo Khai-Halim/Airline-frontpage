@@ -22,18 +22,6 @@
   border-bottom: solid #ddd 1px;
 }
 
-.container {
-  width: 90vw;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.container-2 {
-  width: 90vw;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 .fa-chevron-down {
   font-size: 0.6rem;
   padding-left: 5px;
@@ -56,16 +44,138 @@
   position: relative;
 }
 
-.columns-even {
+.center-x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center-y {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container-2 {
+  width: 90vw;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cols-even {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.columns-even > div, .columns-even span, .columns-even a, .columns-even p, .columns-even ul {
+.cols-even > * {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.cols-even img {
+  max-width: 100%;
+}
+
+.cols-even > :last-child {
+  margin-right: 0;
+}
+
+.cols-aside-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cols-aside-left > * {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.cols-aside-left img {
+  max-width: 100%;
+}
+
+.cols-aside-left > :first-child {
+  width: 200px;
+  margin-left: 0;
+}
+
+.cols-aside-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cols-aside-right > * {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.cols-aside-right img {
+  max-width: 100%;
+}
+
+.cols-aside-right > :last-child {
+  width: 200px;
+  margin-right: 0;
+}
+
+.info-block h3 {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.01rem;
+  color: #333;
+}
+
+.info-block p, .info-block li {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.5rem;
+}
+
+.info-block li {
+  list-style-position: inside;
+}
+
+.btn-read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  border: solid #d82626 2px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.07rem;
+  font-weight: 600;
+  border-radius: 4px;
+  color: #d82626;
+  -webkit-transition: background 300ms ease, color 300ms ease 50ms;
+  transition: background 300ms ease, color 300ms ease 50ms;
+}
+
+.btn-read-more:hover {
+  background: #d82626;
+  color: white;
 }
 
 * {
@@ -83,7 +193,6 @@ h2 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  padding: 0 15px;
 }
 
 p {
@@ -389,6 +498,8 @@ p {
   content: "";
   display: block;
   position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
   background: rgba(51, 51, 51, 0.3);
@@ -396,14 +507,17 @@ p {
 
 /** INFO BOX **/
 .info-box {
+  position: relative;
   max-width: 600px;
   padding-top: 20px;
   background: #d82626;
   border-radius: 90% 70% 77% 0 / 0 0 90% 40%;
+  z-index: 2;
 }
 
 .info-box h2 {
   color: #fdfdfd;
+  padding: 0 15px;
 }
 
 .info-box p {
@@ -430,15 +544,24 @@ p {
   border-radius: 20px;
   font-weight: bold;
   margin: 15px;
+  -webkit-transition: background 250ms ease;
+  transition: background 250ms ease;
+}
+
+.info-box a:hover {
+  background: #d64040;
+  color: white;
 }
 
 /** TABS MENU**/
 #tab-block {
+  position: relative;
   padding-top: 40px;
+  z-index: 2;
 }
 
 ul#tab-btns {
-  z-index: 2;
+  z-index: 99;
   background: rgba(51, 51, 51, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,6 +586,7 @@ ul#tab-btns li {
           flex: 1;
   text-align: center;
   color: #fdfdfd;
+  z-index: 99;
 }
 
 ul#tab-btns li:hover {
@@ -488,6 +612,11 @@ ul#tab-btns li:hover {
 }
 
 /**EXCLAIMER**/
+.exclaimer {
+  position: relative;
+  z-index: 99;
+}
+
 .exclaimer p {
   color: #fdfdfd;
   font-size: 1rem;

@@ -1,13 +1,14 @@
                             /**BANNER & TABS SECTION**/
 #banner{
     position: relative;
-
     background: url('../images/banner.jpg')center/cover no-repeat;
 
     &::after{
         content: "";
         display: block;
         position: absolute;
+        left: 0;
+        top: 0;
         height: 100%;
         width: 100%;
         background: $darken;
@@ -16,12 +17,15 @@
 
                             /** INFO BOX **/
 .info-box{
+    position: relative;
     max-width: 600px;
     padding-top: 20px;
     background: $primary-color-4;
     border-radius: 90% 70% 77% 0 / 0 0 90% 40%;
+    z-index: 2;    
     h2{
         color: $white;
+        padding: 0 15px;
     }
     p{
         @include font-1;
@@ -38,16 +42,24 @@
         border-radius: 20px;
         font-weight: bold;  
         margin: 15px;
+        transition: background 250ms ease;
+        &:hover{
+            background: $primary-color-3;
+            color: white;
+        }
     }
 }
 
                             /** TABS MENU**/
 #tab-block{
+    position: relative;
     padding-top: 40px;
+    z-index: 2;
 }
 
 ul#tab-btns{
-        z-index: 2;
+        
+        z-index: 99;
         background: rgba($color: $black, $alpha: 0.5);
         display: flex;
         justify-content: space-evenly;
@@ -60,6 +72,7 @@ ul#tab-btns{
             flex: 1;
             text-align: center;
             color: $white;
+            z-index:99;
             &:hover{
                 background: $black;
             }
@@ -86,7 +99,10 @@ ul#tab-btns{
 
                             /**EXCLAIMER**/
 .exclaimer{
+    position: relative;
+    z-index: 99;
     p{
+        
         color: $white;
         font-size: 1rem;
         padding: 15px;
