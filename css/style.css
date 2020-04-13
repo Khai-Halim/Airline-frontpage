@@ -139,6 +139,10 @@
   margin-right: 0;
 }
 
+.info-block {
+  margin-bottom: 50px;
+}
+
 .info-block h3 {
   font-family: sans-serif;
   font-size: 1.1rem;
