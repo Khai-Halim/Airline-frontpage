@@ -1,2 +1,60 @@
 /**FOOTER**/
 
+#footer-about-links{
+    h3{
+        font-size: 1.4rem;
+        margin-bottom: 0.9rem;
+    }
+    ul{
+        li{
+            list-style: none;
+            line-height: 1.7rem;
+            a{
+                text-decoration: none;
+                color: $black;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#subscribe{
+    >*{margin-bottom: 0.9rem;}
+    h3{
+        font-size: 1.4rem;    
+    }
+    p{
+        font-size: 1rem;
+    }
+    input{
+        display: block;   
+
+    }
+    a{
+        color: $black;
+    }
+    button{
+        width: 100%;
+        background: $grey-3;
+        @include font-4;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+#social-links{
+    >*{margin-bottom: 0.9rem;}
+    h3{
+        font-size: 1.4rem;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        color: $black;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

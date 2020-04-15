@@ -90,7 +90,7 @@
 }
 
 .cols-even img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .cols-even > :last-child {
@@ -110,7 +110,7 @@
 }
 
 .cols-aside-left img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .cols-aside-left > :first-child {
@@ -131,7 +131,7 @@
 }
 
 .cols-aside-right img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .cols-aside-right > :last-child {
@@ -205,6 +205,18 @@ p {
   font-size: 1.2rem;
   word-spacing: 0.05rem;
   letter-spacing: 0.01rem;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 12px 5px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
 }
 
 /**** CORONA WARNING ****/
@@ -625,5 +637,75 @@ ul#tab-btns li:hover {
   color: #fdfdfd;
   font-size: 1rem;
   padding: 15px;
+}
+
+/**FOOTER**/
+#footer-about-links h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
+}
+
+#footer-about-links ul li {
+  list-style: none;
+  line-height: 1.7rem;
+}
+
+#footer-about-links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#footer-about-links ul li a:hover {
+  text-decoration: underline;
+}
+
+#subscribe > * {
+  margin-bottom: 0.9rem;
+}
+
+#subscribe h3 {
+  font-size: 1.4rem;
+}
+
+#subscribe p {
+  font-size: 1rem;
+}
+
+#subscribe input {
+  display: block;
+}
+
+#subscribe a {
+  color: #333;
+}
+
+#subscribe button {
+  width: 100%;
+  background: #999;
+  display: block;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  color: white;
+  cursor: pointer;
+}
+
+#social-links > * {
+  margin-bottom: 0.9rem;
+}
+
+#social-links h3 {
+  font-size: 1.4rem;
+}
+
+#social-links a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+#social-links a:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
